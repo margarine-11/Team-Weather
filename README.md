@@ -36,6 +36,7 @@
 
 ## Структура проекта
 team-practice-webportfolio/
+
 ├── index.html        # Главная страница <br>
 ├── style.css         # Стили приложения <br>
 ├── script.py         # Логика приложения <br>
