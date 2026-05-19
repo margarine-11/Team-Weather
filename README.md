@@ -35,8 +35,7 @@
 2. Откройте файл index.html в браузере.
 
 ## Структура проекта
-team-practice-webportfolio/
-
+Team-Weather/
 ├── index.html        # Главная страница <br>
 ├── style.css         # Стили приложения <br>
 ├── script.py         # Логика приложения <br>
