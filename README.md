@@ -36,7 +36,7 @@
 
 ## 📝 Структура проекта
 ```
-Team-Weather/
+Pug-Weather/
 ├── index.html     # Главная страница
 ├── style.css      # Стили приложения
 ├── script.js      # Логика приложения
