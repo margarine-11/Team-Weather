@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="card_title">Погода</h1>
+        <p class="card_date">Сегодня, <span id="date"></span></p>
+        <div class="card_search">
+            <input type="text" class="card_input" placeholder="Введите город">
+            <button id="searchBtn" class="card_btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>    
+        <div class="card_weather">
+            <h2 class="card_title card_title--city" id="city">Норильск</h2>
+            <div class="card_block">
+                <h3 class="card_title card_title--temp" id="temperature">--°C</h3>
+                <img src="" class="card_weather-icon" alt="иконка погоды">
+            </div>
+        </div>
+        <div class="card_details">
+            <div class="card_col">
+                <i class="fa-solid fa-wind"></i>
+                <p>Ветер</p>
+                <p id="wind" class="card_info">-- m/s</p>
+            </div>
+            <div class="card_col">
+                <i class="fa-solid fa-droplet"></i>
+                <p>Влажность</p>
+                <p id="humidity" class="card_info">-- %</p>
+            </div>
+            <div class="card_col">
+                <i class="fa-solid fa-gauge-high"></i>
+                <p>Давление</p>
+                <p id="pressure" class="card_info">-- гПа</p>
+            </div>
+            <div class="card_col">
+                <i class="fa-solid fa-temperature-low"></i>
+                <p>Ощущается</p>
+                <p id="feels_like" class="card_info">-- °C</p>
+            </div>
+            <div class="card_col">
+                <i class="fa-solid fa-eye"></i>
+                <p>Видимость</p>
+                <p id="visibility" class="card_info">-- км</p>
+            </div>
+            <div class="card_col">
+                <i class="fa-solid fa-cloud"></i>
+                <p>Облачность</p>
+                <p id="clouds" class="card_info">-- %</p>
+            </div>
+        </div>      
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
