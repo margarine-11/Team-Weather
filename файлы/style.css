@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    border: 0;
+    outline: 0;
+}
+
+body {
+    background: #fff;
+    display: flex;
+    align-items: flex-start;    /* прижали к верху */
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px;          /* отступ сверху */
+}
+
+.card {
+    flex-basis: 470px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin: 0 15px;
+    background: linear-gradient(180deg, #62b8f6 0%, rgb(228, 66, 228) 100%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    height: 230px;              /* начальная высота */
+    transition: height 0.5s ease;
+    /* overflow: hidden;  убрали, чтобы ничего не обрезалось */
+}
+
+.card_title {
+    font-size: 32px;
+}
+
+.card_title--temp {
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.card_title--city {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.card_date {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card_search {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card_input {
+    color: #555;
+    padding: 10px 25px;
+    border-radius: 30px;
+    width: 100%;
+    background: #fff;
+    font-size: 16px;
+    height: 60px;
+}
+
+.card_btn {
+    background: #fff;
+    color: #555;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 60px;
+}
+
+.card_btn:hover {
+    background: rgb(228, 66, 228);
+    color: #fff;
+}
+.card_btn:hover i {
+    transform: scale(1.2);
+}
+
+.card_weather {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.card_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card_block img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.card_details {
+    padding: 0 20px;
+    max-width: 350px;
+    margin: 20px auto 0 auto;
+}
+
+.card_col {
+    display: grid;
+    grid-template-columns: 24px minmax(80px, auto) 1fr;
+    align-items: center;
+    text-align: left;
+    column-gap: 15px;
+}
+
+.card_col:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.card_info {
+    text-align: right;
+    justify-self: end;
+    width: 100%;
+    border-left: 1px solid #fff;
+    padding-left: 15px;
+}
+
+.card.active .card_weather {
+    animation: Show 0.5s forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes Show {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
